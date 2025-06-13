@@ -1,4 +1,3 @@
-import sys
 import arxiv
 from mcp.server.fastmcp import FastMCP
 
@@ -53,3 +52,12 @@ def get_paper(paper_id: str):
         }
     except StopIteration:
         return None
+
+
+def main():
+    mcp.run()
+
+
+if __name__ == "__main__":
+    main()
+

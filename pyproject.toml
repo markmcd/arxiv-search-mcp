@@ -1,8 +1,11 @@
-[project]
-name="arxiv-mcp"
-version="0.1.0"
-dependencies=[
-  "arxiv",
-  "mcp[cli]"
-]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
+[project]
+name = "arxiv-mcp"
+version = "0.1.0"
+dependencies = [
+    "arxiv",
+    "mcp[cli]",
+]
