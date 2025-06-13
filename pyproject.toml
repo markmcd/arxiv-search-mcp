@@ -1,0 +1,8 @@
+[project]
+name="arxiv-mcp"
+version="0.1.0"
+dependencies=[
+  "arxiv",
+  "mcp[cli]"
+]
+
