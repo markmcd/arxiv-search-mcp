@@ -4,15 +4,27 @@ An MCP server for searching arXiv.
 
 ## Installation
 
-TODO: this uses uv, so it can be directly run.
+Install the package directly with PyPI.
+
+```bash
+pip install arxiv-mcp
+```
+
+Once installed in your agent's environment, you can load it with the settings in
+[`sample_settings.json`](./sample_settings.json).
 
 ## Usage
 
-To run the server, execute the following command:
+Once installed, you can run the server module directly.
 
 ```bash
-# Dev mode, brings up the MCP inspector
-uv run mcp dev mcp_server.py
+python -m arxiv_mcp
+```
+
+To run the server using the MCP inspector, execute the following command.
+
+```bash
+uv run mcp dev arxiv_mcp/mcp_server.py
 ```
 
 The server will start and be available for MCP clients.
@@ -37,3 +49,4 @@ Get detailed information about a specific paper.
 **Parameters:**
 
 *   `paper_id` (str): The ID of the paper to retrieve.
+

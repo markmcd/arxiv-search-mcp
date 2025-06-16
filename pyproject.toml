@@ -1,11 +1,24 @@
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "arxiv-mcp"
+description = "Simple MCP server for searching arXiv"
 version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.9"
 dependencies = [
     "arxiv",
     "mcp[cli]",
 ]
+authors = [
+  { name="Mark McDonald", email="i@ii.net" },
+]
+license = "Apache-2.0"
+license-files = ["LICEN[CS]E*"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/markmcd/arxiv-mcp"
+Issues = "https://github.com/markmcd/arxiv-mcp/issues"
+
