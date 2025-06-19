@@ -1,5 +1,5 @@
 [project]
-name = "arxiv-mcp"
+name = "arxiv-search-mcp"
 description = "Simple MCP server for searching arXiv"
 version = "0.1.0"
 readme = "README.md"
@@ -19,6 +19,6 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
-Homepage = "https://github.com/markmcd/arxiv-mcp"
-Issues = "https://github.com/markmcd/arxiv-mcp/issues"
+Homepage = "https://github.com/markmcd/arxiv-search-mcp"
+Issues = "https://github.com/markmcd/arxiv-search-mcp/issues"
 

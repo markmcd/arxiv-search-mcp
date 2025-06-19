@@ -1,7 +1,7 @@
 import arxiv
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("arxiv-mcp")
+mcp = FastMCP("arxiv-search-mcp")
 
 client = arxiv.Client()
 

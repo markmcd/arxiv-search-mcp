@@ -1,4 +1,4 @@
-# arxiv-mcp
+# arxiv-search-mcp
 
 An MCP server for searching arXiv.
 
@@ -7,7 +7,7 @@ An MCP server for searching arXiv.
 Install the package directly with PyPI.
 
 ```bash
-pip install arxiv-mcp
+pip install arxiv-search-mcp
 ```
 
 Once installed in your agent's environment, you can load it with the settings in
@@ -18,13 +18,13 @@ Once installed in your agent's environment, you can load it with the settings in
 Once installed, you can run the server module directly.
 
 ```bash
-python -m arxiv_mcp
+python -m arxiv_search_mcp
 ```
 
 To run the server using the MCP inspector, execute the following command.
 
 ```bash
-uv run mcp dev arxiv_mcp/mcp_server.py
+uv run mcp dev arxiv_search_mcp/mcp_server.py
 ```
 
 The server will start and be available for MCP clients.
