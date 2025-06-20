@@ -1,6 +1,11 @@
 import arxiv
 import itertools
+import logging
+
 from mcp.server.fastmcp import FastMCP
+from mcp.types import ToolAnnotations
+
+logging.basicConfig(level=logging.DEBUG)
 
 mcp = FastMCP("arxiv-search-mcp")
 
@@ -14,6 +19,8 @@ def search_papers(query: str, page: int = 1, page_size: int = 5):
     This tool searches for papers on arXiv based on a query string. It supports pagination to browse through the search results.
 
     The search results are sorted by the submission date, with the most recent papers appearing first.
+
+    If timeouts occur, consider requesting fewer results and paging through them.
 
     Each paper in the returned list is a dictionary containing the following fields:
     - id: The paper's unique arXiv ID.
