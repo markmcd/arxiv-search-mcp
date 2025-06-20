@@ -27,7 +27,19 @@ To run the server using the MCP inspector, execute the following command.
 uv run mcp dev arxiv_search_mcp/mcp_server.py
 ```
 
-The server will start and be available for MCP clients.
+To include the server in your agent config, ensure it's installed in the agent's
+virtualenv and then add this to your config.
+
+```json
+{
+  "mcpServers": {
+    "arxiv": {
+      "command": "python",
+      "args": ["-m", "arxiv_mcp"]
+    }
+  }
+}
+```
 
 ## Tools
 
